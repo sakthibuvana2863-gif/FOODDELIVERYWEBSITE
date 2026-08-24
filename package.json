@@ -1,0 +1,25 @@
+{
+  "name": "fooddeliverywebsite",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sakthibuvana2863-gif/FOODDELIVERYWEBSITE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sakthibuvana2863-gif/FOODDELIVERYWEBSITE/issues"
+  },
+  "homepage": "https://github.com/sakthibuvana2863-gif/FOODDELIVERYWEBSITE#readme",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "express": "^5.2.1",
+    "mongodb": "^7.5.0"
+  }
+}
