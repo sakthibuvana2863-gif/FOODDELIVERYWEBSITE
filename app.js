@@ -1,17 +1,13 @@
-const connectDB = require("./db");
+const express = require("express");
 
-async function main() {
-    const db = await connectDB();
+const app = express();
 
-    const collection = db.collection("students");
+app.use(express.json());
 
-    // Insert data
-    await collection.insertOne({
-        name: "buvana",
-        dept: "CSE"
-    });
+app.get("/", (req, res) => {
+    res.send("Food Delivery API Running");
+});
 
-    console.log("Data Inserted");
-}
-
-main();
+app.listen(3000, () => {
+    console.log("Server running on port 3000");
+});
