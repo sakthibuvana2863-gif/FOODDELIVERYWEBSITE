@@ -1,11 +1,13 @@
 const express = require("express");
 const connectDB = require("./db");
 const userRoutes = require("./routes/userRoutes");
+const foodRoutes = require("./routes/foodRoutes");
 
 const app = express();
 
 app.use(express.json());
 app.use("/users", userRoutes);
+app.use("/foods", foodRoutes);
 
 async function startServer() {
     const db = await connectDB();
