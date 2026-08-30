@@ -3,6 +3,7 @@ const connectDB = require("./db");
 const userRoutes = require("./routes/userRoutes");
 const foodRoutes = require("./routes/foodRoutes");
 const cartRoutes = require("./routes/cartRoutes");
+const orderRoutes = require("./routes/orderRoutes");
 
 const app = express();
 
@@ -10,6 +11,7 @@ app.use(express.json());
 app.use("/users", userRoutes);
 app.use("/foods", foodRoutes);
 app.use("/cart", cartRoutes);
+app.use("/orders", orderRoutes);
 
 async function startServer() {
     const db = await connectDB();
