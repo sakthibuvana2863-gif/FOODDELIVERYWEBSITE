@@ -8,6 +8,7 @@ const orderRoutes = require("./routes/orderRoutes");
 const app = express();
 
 app.use(express.json());
+app.use(express.static("public"));
 app.use("/users", userRoutes);
 app.use("/foods", foodRoutes);
 app.use("/cart", cartRoutes);
